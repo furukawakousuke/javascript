@@ -42,5 +42,23 @@ function winLose(user,js){
     }else if(js == "パー"){
         winLoseStr = "負け";
     }
+} else if(user == "チョキ"){
+    if(js == "グー"){
+        winLoseStr = "負け";
+    }else if(js == "チョキ"){
+        winLoseStr = "あいこ";
+    }else if(js == "パー"){
+        winLoseStr = "勝ち";
+    }
+}else if(user == "パー"){
+    if(js == "グー"){
+        winLoseStr = "勝ち";
+    }else if(js == "チョキ"){
+        winLoseStr = "負け";
+    } else if(js == "パー"){
+        winLoseStr = "あいこ";
+    }
 }
+
+return winLoseStr;
 }
