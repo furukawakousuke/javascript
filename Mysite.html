@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://kit.fontawesome.com/936e751774.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Mysite.css" />
   </head>
@@ -12,12 +13,19 @@
       <nav class="nav">
       <div class="container">
       <img class="img" src="img/logo.png"></img>
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <span class="nav_content">
         <ul>
-        <li>Portfolio</li>
-        <li>Feature</li>
-        <li>Profile</li>
-        <li>Contact</li>
-      </ul>
+         <li><a href="#portfolio" style="text-decoration:none;" class="a">Portfolio</a></li>
+         <li><a href="#feature" style="text-decoration:none;" class="a">Feature</a></li>
+         <li><a href="#profile" style="text-decoration:none;" class="a">Profile</a></li>
+         <li><a href="#contact" style="text-decoration:none;" class="a">Contact</a></li>
+        </ul>
+        </span>
       </div>
       </nav>
     </header>
@@ -27,7 +35,7 @@
         <span class="simply">simply dummy text of the printing</span></p>
       </div>
       <nav class="nav1">
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
           <p class="title1">Portfolio</p>
           <p class="text1">It is a long established fact that a reader will be distracted by the readable<br>
 content of a page when looking at its layout.<br>
@@ -43,7 +51,7 @@ The point of using Lorem Ipsum is that it has a more-or-less normal distribution
         </div>
       </nav>
       <nav class="nav2">
-        <div class="feature">
+        <div class="feature" id="feature">
           <p class="title2">Feature</p>
           <p class="text1">It is a long established fact that a reader will be distracted by the readable<br>
 content of a page when looking at its layout.<br>
@@ -81,7 +89,58 @@ The point of using Lorem Ipsum is that it has a more-or-less normal distribution
          </div>
         </div>
       </nav>
-      
+      <nav class="nav3">
+        <div class="profile" id="profile">
+          <h1 class="title3">Profile</h1>
+          <p class="text2">It is a long established fact that a reader will be distracted by the readable<br>
+content of a page when looking at its layout.<br>
+The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+          <div class="poster">
+            <img class="jpg" src="img/my-icon.jpg">
+            
+          <div class="introduction">
+            <p class="pro"><span class="myname">MyName</span><br>Contrary to popular 
+            belief, Lorem Ipsum is not simply random text. It has roots in a
+            piece of classical Latin literature from 45 BC, making it over 2000
+            years old. Richard McClintock, a Latin professor at Hampden-Sydney
+            College in Virginia, looked up one of the more obscure Latin words,
+            consectetur</p>
+            <p class="pro"><span class="myskill myname">MySkill</span><br>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav4">
+        <div class="contact" id="contact">
+          <h1 class="title4">Contact</h1>
+          <p class="text3">It is a long established fact that a reader 
+          will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem Ipsum is that it has a more-or-less 
+          normal distribution of letters</p>
+          <div class="address">
+            <div class="add">
+            <p class="mail">Mail</p>
+            <a class="detail1" href="mailto:xxx&#64;xxx.com">
+            xxx@xxx.com</a>
+            <p class="tel">Tel</p>
+            <p class="detail2">
+            000-0000-0000</p>
+            </div>
+          <div class="sns">
+            <p class="logo1">
+              SNS
+            </p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
+        </div>
+      </nav>
     </main>
+    <footer>
+      <p class="logo2">© 2017 WebCamp</p>
+    </footer>
   </body>
 </html>

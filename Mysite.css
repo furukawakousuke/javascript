@@ -19,16 +19,18 @@ ul{
 li{
   list-style:none;
   float:left;
-  padding:15px 30px;
-  color:#f7f7f7;
+  padding:0px 30px;
+  line-height:70px;
   font-size:16px;
-  line-height:40px;
+}
+.a{
+  color:#f7f7f7;
 }
 .img{
   height:70px;
 }
-.logo{ 
-  
+.logo{
+
   background-image: url(img/mv.png);
   background-size:cover;
   margin:0 auto;
@@ -138,4 +140,301 @@ li{
   width:320px;
   height:auto;
   text-align:center;
+}
+.nav3{
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  /*align-items: center;
+    display: flex;
+    justify-content: center;/*/
+  background-color:#eceff1;
+}
+.profile{
+  width:1024px;
+  margin:0 auto;
+}
+.title3{
+  display: block;
+  font-size: 32px;
+  color: #000000;
+  padding-top:90px;
+  font-weight: bold;
+  margin:0 auto;
+  text-align:center;
+  border-bottom:3px solid #ec715f;
+  margin-bottom:8px;
+  width:200px;
+}
+.text2{
+  padding:30px 0px;
+}
+.poster{
+  display:flex;
+  justify-content:left;
+  padding-bottom:90px;
+}
+.jpg{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  margin:0px 131px;
+}
+.pro{
+  color:#000000;
+  font-size:16px;
+  text-align:start;
+}
+.myname{
+  font-size:20px;
+  margin:5px;
+  font-weight:bold;
+}
+.myskill{
+  display: inline-block;
+ padding-top:20px;
+}
+.introduction{
+}
+.nav4{
+  margin:0 auto;
+}
+.contact{
+  width:800px;
+  margin:0 auto;
+}
+.title4{
+  display: block;
+  font-size: 32px;
+  color: #000000;
+  padding-top:90px;
+  font-weight: bold;
+  margin:0 auto;
+  text-align:center;
+  border-bottom:3px solid #ec715f;
+  margin-bottom:8px;
+  width:200px;
+}
+.text3{
+  text-align:center;
+  padding:30px 0px;
+  font-size:16px;
+}
+.address{
+  display:flex;
+  justify-content:center;
+  padding-bottom: 90px;
+}
+.add{
+  display:block;
+  margin:0 auto;
+}
+.detail1{
+  padding-bottom:20px;
+  color:#000000;
+}
+.mail{
+  font-size:20px;
+  padding-bottom:5px;
+  font-weight:bold;
+}
+.tel{
+  font-size:20px;
+  padding-bottom:5px;
+  font-weight:bold;
+  padding-top:20px;
+}
+.sns{
+  display:block;
+  font-size:20px;
+  padding-bottom:5px;
+  font-weight:bold;
+  margin:0 auto;
+}
+.fa{
+  font-size:50px;
+  padding-top:5px;
+}
+.fa-twitter{
+  padding:0px 20px;
+}
+footer{
+  background-color:#ec715f;
+  height:60px;
+}
+.logo2{
+  font-size: 16px;
+  color:#fafafa;
+  text-align:center;
+  line-height:60px;
+}
+.drawer_hidden {
+  display: none;
+}
+@media screen and (max-width:768px ) {
+  header{
+margin:0 auto;
+  background-color: #ec715f;
+  height:50px;
+  }
+  .nav{
+  width:90%;
+  margin:0 auto;
+}
+.li{
+
+}
+.logo{
+  background-image: url(img/code.png);
+  }
+  .img{
+  height:50px;
+}
+li{
+  list-style:none;
+  float:left;
+  padding:0px 10px;
+  line-height:50px;
+  font-size:16px;
+}
+  .drawer_open {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+  float:right;
+  border:1px solid #fafafa;
+  margin:5px 0px;
+}
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #fafafa;
+  transition: 0.5s;
+  position: absolute;
+  border-color: #fafafa;
+}
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #ec715f;
+  transition: .5s;
+
+}
+
+/* メニュー黒ポチを消す */
+ul {
+  list-style: none;
+  float: inherit;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;/* メニューを画面に入れる */
+}
+.nav1{
+  text-align:center;
+}
+.portfolio{
+  width:90%;
+  margin:0 auto;
+}
+.image{
+  padding:10 0px;
+  display:block;
+  margin:0 auto;
+}
+.img1{
+  display:none;
+}
+.img2{
+  display:none;
+}
+.img3{
+  display:none;
+}
+.feature{
+  width:90%;
+  margin:0 auto;
+}
+.strength{
+  display:inline-block;
+  width:100%;
+}
+.strength1{
+  margin:0 auto;
+}
+.strength2{
+  padding:10px 0;
+  margin:0 auto
+}
+.strength3{
+  margin:0 auto;
+}
+
+.contact{
+  width:90%;
+}
+.profile{
+  width:90%;
+}
+.poster{
+  display:block;
+}
+.address{
+  flex:block;
+}
+.img-logo{
+  width:90%;
+  text-align:center;
+}
+.pro{
+  text-align:center;
+}
+.myname{
+  padding:20px 0 5px 0;
+}
+.jpg{
+  padding-bottom:20px;
+}
 }
